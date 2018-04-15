@@ -8,6 +8,7 @@
 \usepackage{tabularx}
 \usepackage{wallpaper}
 \usepackage{listings}
+\usepackage[toc,page]{appendix}
 
 \usepackage[backend=biber,style=apa]{biblatex}
 \addbibresource{biblio.bib}
@@ -113,6 +114,8 @@
 
   %%% TABLE OF CONTENTS %%%
   \tableofcontents
+  
+  \cleardoublepage{}
 
   %%% DOCUMENT %%%
   \section{Preface}
@@ -131,6 +134,8 @@
   
   \printbibliography[heading=bibintoc]
  
-  \appendix
+  \begin{appendices}
+  	\section{Internship journal}
+  \end{appendices}
   
 \end{document}
