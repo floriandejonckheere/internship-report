@@ -38,6 +38,14 @@
 \newcommand{\hogentlogo}{hogent-logo.png}
 \newcommand{\hogentheader}{header.png}
 
+%%% STUDENTS %%%
+\usepackage{ifthen}
+\newcommand{\florian}[1]{\ifthenelse{\isundefined{\isflorian}}{}{#1}}
+\newcommand{\jasper}[1]{\ifthenelse{\isundefined{\isjasper}}{}{#1}}
+
+% Change this line to print a personal report
+\newcommand{\isflorian}{}
+
 %%% TABLES %%%
 \def\arraystretch{1.35}
 \renewcommand{\tabularxcolumn}[1]{>{\small}m{#1}}
@@ -101,7 +109,12 @@
       \vskip\baselineskip
       \noindent
       \textsf{\textbf{\authoronename} (\href{mailto:\authoroneemail}{\authoroneemail}) \\
-      	\textbf{\authortwoname} (\href{mailto:\authortwoemail}{\authortwoemail})}
+      	\textbf{\authortwoname} (\href{mailto:\authortwoemail}{\authortwoemail}) \\
+      	\\
+      	\textbf{Coordinator}: Stefaan De Cock (\href{mailto:stefaan.decock@hogent.be}{stefaan.decock@hogent.be}) \\
+      	\textbf{Mentor}: Esther De Loof (\href{mailto:estherdeloof@gmail.com}{estherdeloof@gmail.com})\\
+      	\textbf{Location}: Open Webslides, IDLab, Ghent University
+      }
     \end{minipage}
   \end{titlepage}
 
@@ -136,6 +149,7 @@
  
   \begin{appendices}
   	\section{Internship journal}
+  	\section{Reflection reports}
   \end{appendices}
   
 \end{document}
