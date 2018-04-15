@@ -1,13 +1,16 @@
 \documentclass[10pt,a4paper]{article}
 
 \usepackage[utf8]{inputenc}
-\usepackage[dutch]{babel}
+\usepackage[english]{babel}
 \usepackage{fancyhdr}
 \usepackage{geometry}
 \usepackage{graphicx}
 \usepackage{tabularx}
 \usepackage{wallpaper}
 \usepackage{listings}
+
+\usepackage[backend=biber,style=apa]{biblatex}
+\addbibresource{biblio.bib}
 
 \usepackage{xcolor, colortbl}
 \definecolor{ugentblue}{HTML}{164A7C}
@@ -20,6 +23,7 @@
 \definecolor{titlepagetext}{HTML}{000000}
 \definecolor{titlepageline}{HTML}{207BFF}
 \definecolor{titlepagesubtext}{HTML}{AAAAAA}
+
 
 %%% VARIABLES %%%
 \newcommand{\coursename}{Internship Applied Computer Science}
@@ -107,5 +111,26 @@
   \ULCornerWallPaper{1}{\hogentheader}
   \fancyfoot[C]{\thepage}
 
+  %%% TABLE OF CONTENTS %%%
+  \tableofcontents
+
   %%% DOCUMENT %%%
+  \section{Preface}
+  
+  \section{Internship location}
+  
+  \section{Internship description}
+  
+  \section{Assignments and responsibilities}
+  
+  \section{Personal reflection}
+  
+  \section{Conclusion}
+  
+  \section*{Glossary}
+  
+  \printbibliography[heading=bibintoc]
+ 
+  \appendix
+  
 \end{document}
