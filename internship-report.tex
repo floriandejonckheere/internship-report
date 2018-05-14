@@ -9,6 +9,7 @@
 \usepackage{wallpaper}
 \usepackage{listings}
 \usepackage[toc,page]{appendix}
+\usepackage{pdfpages}
 
 \usepackage[backend=biber,style=apa]{biblatex}
 \addbibresource{biblio.bib}
@@ -86,6 +87,8 @@
 }
 
 \begin{document}
+  \includepdf{cover.pdf}
+
   \begin{titlepage}
     %%% FOOTER %%%
     \thispagestyle{fancy}
@@ -135,23 +138,23 @@
 
   \section{Project and framework}
     The internship will be held at IDLab (Internet Data Lab), a core research group of imec and Ghent University. Ruben Verborgh, professor Semantic Web technology at Ghent University and researcher within IDLab, is the original initiator of the project where I will do my internship. He proposed the idea for \textit{open webslides}, using modern webtechnologies to create course material and enable students to interact more with the teacher and with each other. In 2016 the Open Webslides project won the UGent Innoversity Challenge by convincing the university of the project's vision on the future of education: open and web based.
-    
+
     Two years later and one year after the kickoff of the development on a co-creation platform for webslides, the project now counts people from many faculties within the UGent, multiple universities and even a wider international reach using an Erasmus+ project funded by the European Union.
-    
+
     \florian{
       I have chosen this project because of several reasons. First, I have already been working on the project as an active developer since Feburary 2017. This allowed me to jump right into the project without any kind of learning curve or impediment. Second, since I am the main backend developer and have designed and implemented a large part of the backing logic, it is beneficial for the project to allow me to continue developing the platform. Last of all, the project stays within the domain of interest I have set out for myself -- Ruby on Rails and dynamic web applications.
-    
+
       My role in the project concerns more than just developing the backend software. It also reaches into the frontend stack, effectively making me a full-stack developer. In February 2018 the development team decided to reimplement a large part of the frontend stack, causing an imbalance between frontend and backend relating to workload.
     }
 
   \section{Responsibilities and assignments}
     The current roadmap and milestones for the Open Webslides project are tailored to the two internship students working on the development. By the end of their internship (end of May 2018), the frontend part of the platform will have been reimplemented, providing a basic yet adequately functional interface for the Open Webslides platform. The main focus of this development phase is on the slides editor: a user should be able to create and modify topics, making use of all the interactive and semantic utilities the web has to offer.
-    
+
     \florian{
       Since I have been involved in the project since the beginning of the platform development, I am the main responsible person for defining the milestones, determining the product backlog and leading the development team on a day-to-day basis.
-      
+
       However, my primary role in the development team is backend developer. I am responsible for developing the backend server, implemented as a REST API server. Designing and maintaining the supporting server infrastructure is also one of my responsibilities. I also provide supporting frontend development, since the main workload of this development phase lies in the frontend stack.
-      
+
       Finally, I am also employed as technical administrator for the CoCOS Erasmus+ project. This project researches co-creation using open source tools, and Open Webslides is one of the tools it will use in the future. Supporting the project website and the interactive learning environment (Moodle) are examples of responsibilities concerning the CoCOS project. Keeping the Open Webslides project roadmap, milestones and expectations synced up with the intellectual outputs of the Erasmus+ project are important tasks as well.
     }
 
@@ -170,14 +173,14 @@
     \florian{
       \subsection{Week 4}
         The first four weeks of the internship consisted of two sprints of two weeks each. Since the frontend part of the project was restarted from scratch, a lot of cleaning up and configuring infrastructure had to be done. Considering the involvement and efforts already invested in the project, these tasks were completed without problem. At the start of each sprint the backlog for the sprint was determined in coordination with the other developers. A lot of the tasks were still conceptual (writing out documentation, designing mockups and storyboards), and it proved to be no problem to complete all the tasks assigned during the sprint pre-meeting.
-        
+
         Notable tasks and assignments include being responsible for the technical backbone for the Erasmus+ project that was initiated fall 2017. Meetings with responsible persons from the project consortium were held and technical support was provided.
-      
+
       \subsection{Week 8}
         The following two sprints of two and three weeks long really kickstarted the software development. The frontend developers went to work to implement the features on the product backlog according to the user stories and mockups. Since React, Redux and the whole frontend stack are not new but still largely unexplored to me, I have learned a lot and still expect to continue to learn more about these technologies in the future.
-        
+
         The global development of the platform is slower than expected; however the initial goal of creating a working editor at the end of the internship is still reachable. In the future sprints, it is important to emphasize quality assurance and not rush implementing features without proper testing and code review.
-        
+
         Continuing the role as technical administrator in the CoCOS project, a meeting in Madrid, Spain was held with all members of the consortium present. This clarified the roadmap and intellectual outputs for the project, and underlined the dependency upon Open Webslides as a co-creation platform. Expected is that more time will be spent on various tasks within this project, since the dissemination plan will be in effect starting May 2018. Since one of the partners (Arteveldehogeschool) will provide face to face training using Open Webslides in February 2019, close collaboration on preliminary resources will be necessary.
     }
 
