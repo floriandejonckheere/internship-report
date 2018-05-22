@@ -135,14 +135,21 @@
 
   %%% DOCUMENT %%%
   \section{Preface}
-
+    This document describes the motivation, goals and evolution of my internship at the Open Webslides project.
+    It was written in collaboration with \florian{Jasper D'haene}\jasper{Florian Dejonckheere}, another student who has done his internship at the same project.
+    
+    The internship was successfully completed thanks to the efforts of several people.
+    First, Ruben Verborgh, the original author of the educational framework the project is set in, and who is currently teaching semantic web technologies at the University of Ghent.
+    Second, the person who is responsible for all administration and communication of the project within the university, Esther De Loof.
+    Finally, our internship coordinator Stefaan De Cock, who followed up during the period of the internship.
+    
   \section{Project and framework}
     % Voorstelling van de stageplaats/afdeling
 
-    The internship will be held at IDLab (Internet Data Lab), a core research group of imec and Ghent University.
+    The internship will be held at IDLab\footnote{\href{https://www.ugent.be/ea/idlab/en}{https://www.ugent.be/ea/idlab/en}} (Internet Data Lab), a core research group of imec and Ghent University.
     Ruben Verborgh, professor Semantic Web technology at Ghent University and researcher within IDLab, is the original initiator of the project where the internship will take place.
     He proposed the idea for \textit{open webslides}, using modern webtechnologies to create course material and enable students to interact more with the teacher and with each other.
-  In 2016 the Open Webslides project won the UGent Innoversity Challenge by convincing the university of the project's vision on the future of education: open and web based.
+  In 2016 the Open Webslides\footnote{\href{https://openwebslides.github.io}{https://openwebslides.github.io}} project won the UGent Innoversity Challenge by convincing the university of the project's vision on the future of education: open and web based.
 
     Two years later and one year after the kickoff of the development on a co-creation platform for webslides, the project now counts people from many faculties within the UGent, multiple universities and even a wider international reach using an Erasmus+ project funded by the European Union.
 
@@ -155,7 +162,11 @@
 
       My role in the project concerns more than just developing the backend software.
       It also reaches into the frontend stack, effectively making me a full-stack developer.
-      In February 2018 the development team decided to reimplement a large part of the frontend stack, causing an imbalance between frontend and backend relating to workload.
+      In February 2018 the development team decided to reimplement a large part of the frontend stack, causing an imbalance between frontend and backend.
+    }
+  
+    \jasper{
+      % TODO
     }
 
   \section{Responsibilities and assignments}
@@ -163,7 +174,9 @@
 
     The current roadmap and milestones for the Open Webslides project are tailored to the two internship students working on the development.
     By the end of their internship (end of May 2018), the frontend part of the platform will have been reimplemented, providing a basic yet adequately functional interface for the Open Webslides platform.
-    The main focus of this development phase is on the slides editor: a user should be able to create and modify topics, making use of all the interactive and semantic utilities the web has to offer.
+    One of the important aspects of this reimplementation is the presence of a strong developer mentality and code foundation, based on adequate testing coverage, integration tests, pull request reviews and internal conventions.
+    The full description of the principles and conventions is written down in the project charter\footnote{\href{https://docs.google.com/document/d/1k5-6LX3VHIK5Jqs8hX9gVvC9cr81brG-fZm1qaF290w}{https://docs.google.com/document/d/1k5-6LX3VHIK5Jqs8hX9gVvC9cr81brG-fZm1qaF290w}}.
+    The main focus of this development phase is on the slides editor: a user should be able to create and modify topics, making use of all the interactive and semantic utilities the web has to offer.\\
 
     \florian{
       Since I have been involved in the project since the beginning of the platform development, I am the main responsible person for defining the milestones, determining the product backlog and leading the development team on a day-to-day basis.
@@ -181,6 +194,23 @@
 
   \section{Completed assignments}
     % Uitgewerkte opdracht(en) (dit bevat indien van toepassing analyse, ontwerp en implementatie)
+
+    \florian{
+      \begin{itemize}
+        \item \textbf{Deployment}: implementation of the web application's runtime environment. 
+              The deployment procedure uses Docker\footnote{\href{https://www.docker.com/}{https://www.docker.com/}} and Docker Compose\footnote{\href{https://docs.docker.com/compose/}{https://docs.docker.com/compose/}} to create a reproducible and stable build of the product.
+        \item \textbf{REST API}: the backend server was mainly written during the previous years, however due to conceptual changes some parts had to be rewritten.
+              Examples of these changes include naming changes, the move from storing plain HTML as course content in the backend to a controlled JSON or YAML format, integrating UGent CAS into the system.
+        \item \textbf{Authentication}: since the authentication module in the backend was already available, frontend integration went smoothly.
+              The platform uses a mechanism of JSON Web Tokens, authenticating every request with the API server while storing the renewed token.
+              The authentication module in the frontend includes user signup, sign in and reset password functionality.
+        \item \textbf{Slide rendering}: course content is structured in a hierarchy.
+              From this hierarchy slides and full-text pages are then derived.
+              Together with another developer on the project, I wrote the slide rendering logic.
+        \item \textbf{CoCOS}: a major assignment was the setup and maintenance of the CoCOS project site\footnote{\href{https://www.cocos.education/}{https://www.cocos.education/}} and digital learning environment\footnote{\href{https://my.cocos.education/}{https://my.cocos.education/}} in collaboration with international partners.
+              The project website comes in the form of a self-hosted WordPress application, while the digital learning environment is a self-hosted software package called Moodle\footnote{\href{https://moodle.org/}{https://moodle.org/}}.
+      \end{itemize}
+    }
 
   \section{Personal reflection}
     % Eindreflectie
